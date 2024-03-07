@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>972</width>
+    <height>803</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Data Communication</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_Communication">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>351</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Data Communication</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <widget class="QPushButton" name="btn_connect">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>70</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Connect</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_IP">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>160</y>
+           <width>110</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>IP Address</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_Port">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>160</y>
+           <width>80</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Port Number</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_IP">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>191</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>192.168.1.120</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_Port">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>190</y>
+           <width>121</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>4040</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_connect">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>309</y>
+           <width>330</width>
+           <height>251</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman','Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times New Roman,Times New Roman'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_textbrower_clear">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>570</y>
+           <width>80</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_filename">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>250</y>
+           <width>330</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_filename">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>110</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Write to</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_textbrowser">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>110</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Text Browser</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_disconnect">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>70</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Disconnect</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_connect_status">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>30</y>
+           <width>180</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>14</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Connect Status</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_status">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>330</width>
+           <height>30</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_plot">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>0</y>
+          <width>331</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Plot Window</string>
+        </property>
+        <widget class="QRadioButton" name="rbtn_plot_dynamic">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>120</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Dynamic Graph</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="rbtn_plot_static">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>30</y>
+           <width>120</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Static Graph</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_dynamic">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>311</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="title">
+          <string>Dynamic</string>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Duration</string>
+          </property>
+         </widget>
+         <widget class="QTimeEdit" name="timeEdit_duration">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>30</y>
+            <width>181</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="displayFormat">
+           <string>hh:mm:ss</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Poll Interval</string>
+          </property>
+         </widget>
+         <widget class="QTimeEdit" name="timeEdit_interval">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>70</y>
+            <width>181</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="displayFormat">
+           <string>hh:mm:ss</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_static">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>311</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="title">
+          <string>Static</string>
+         </property>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Start Time</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>80</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>End Time</string>
+          </property>
+         </widget>
+         <widget class="QDateTimeEdit" name="dateTimeEdit_start">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>30</y>
+            <width>181</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy-MM-dd hh:mm:ss</string>
+          </property>
+         </widget>
+         <widget class="QDateTimeEdit" name="dateTimeEdit_end">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>70</y>
+            <width>181</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy-MM-dd hh:mm:ss</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="btn_plot_start">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>120</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Plot START</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_plot_stop">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>120</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Plot STOP</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_logo">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>390</y>
+          <width>331</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Plot_SCI</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Plot_histogram</string>
+       </attribute>
+       <widget class="QGraphicsView" name="plot_sci_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>33</y>
+          <width>1057</width>
+          <height>715</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_plot_save_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>75</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>972</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
